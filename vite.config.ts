@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react()],
-  base: isGithubPages ? "portfolio" : "/",
+  base: isGithubPages ? "/portfolio/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
