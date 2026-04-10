@@ -2,6 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
+const isGithubPages = process.env.GITHUB === "true";
+
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
@@ -12,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react()],
+  base: isGithubPages ? "/niraj-maharjan-portfolio/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
