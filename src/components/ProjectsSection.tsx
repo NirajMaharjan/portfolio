@@ -8,32 +8,33 @@ import project3 from "@/assets/project-3.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const projects = [
-  {
-    title: "MCODE — Email for Developers",
-    description:
-      "A 3D interactive web platform for developer email services with Spline integration.",
-    image: project1,
-    tech: ["React", "Tailwind", "Spline"],
-    link: "#",
-  },
-  {
-    title: "MIladiCode — Gaming UI",
-    description:
-      "Next-level gaming UI with 3D characters, NFT store, and immersive arena design.",
-    image: project2,
-    tech: ["React", "GSAP", "Three.js"],
-    link: "#",
-  },
-  {
-    title: "3D Developer Portfolio",
-    description:
-      "A stunning 3D portfolio featuring smooth animations, about section, and contact form.",
-    image: project3,
-    tech: ["HTML", "CSS", "JavaScript"],
-    link: "#",
-  },
-];
+const projects=[]
+// const projects = [
+//   {
+//     title: "MCODE — Email for Developers",
+//     description:
+//       "A 3D interactive web platform for developer email services with Spline integration.",
+//     image: project1,
+//     tech: ["React", "Tailwind", "Spline"],
+//     link: "#",
+//   },
+//   {
+//     title: "MIladiCode — Gaming UI",
+//     description:
+//       "Next-level gaming UI with 3D characters, NFT store, and immersive arena design.",
+//     image: project2,
+//     tech: ["React", "GSAP", "Three.js"],
+//     link: "#",
+//   },
+//   {
+//     title: "3D Developer Portfolio",
+//     description:
+//       "A stunning 3D portfolio featuring smooth animations, about section, and contact form.",
+//     image: project3,
+//     tech: ["HTML", "CSS", "JavaScript"],
+//     link: "#",
+//   },
+// ];
 
 const techIcons: Record<string, typeof Atom> = {
   React: Atom,
