@@ -113,6 +113,16 @@ const ContactSection = () => {
           </button>
         </form>
 
+        <div className="flex items-center justify-center mt-8">
+          <a
+            href="/cv.pdf"
+            download
+            className="contact-btn btn-glow inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-primary/15 border border-primary/40 text-primary font-medium tracking-wide text-base"
+          >
+            Download CV
+          </a>
+        </div>
+
         {/* Social icons */}
         <div className="social-icons-row flex items-center justify-center gap-4 mt-10">
           <a

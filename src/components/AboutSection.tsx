@@ -3,23 +3,23 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import profileImg from "@/assets/profile.png";
 import {
-  FileHtml,
-  FileCss,
   FileJs,
-  Atom,
-  Wind,
+  BracketsCurly,
+  Terminal,
+  Code,
+  Cloud,
   GitBranch,
 } from "@phosphor-icons/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
-  { icon: FileHtml, label: "HTML5" },
-  { icon: FileCss, label: "CSS3" },
-  { icon: FileJs, label: "JavaScript" },
-  { icon: Atom, label: "React" },
-  { icon: Wind, label: "Tailwind" },
-  { icon: GitBranch, label: "GSAP" },
+  { icon: Cloud, label: "Docker" },
+  { icon: Code, label: "Kubernetes" },
+  { icon: BracketsCurly, label: "Express.js" },
+  { icon: GitBranch, label: "Git" },
+  { icon: FileJs, label: "Next.js" },
+  { icon: Terminal, label: "Python" },
 ];
 
 const AboutSection = () => {
@@ -125,11 +125,11 @@ const AboutSection = () => {
               <span className="text-gradient">Experiences</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8 font-light text-base md:text-lg">
-              I'm a frontend developer specializing in building immersive,
-              visually stunning web applications. With expertise in React,
-              GSAP, and modern CSS, I create seamless user experiences
-              that blend aesthetics with performance. I'm passionate about
-              pushing the boundaries of what's possible on the web.
+              I'm a backend developer building scalable, secure APIs and
+              cloud-native services. With expertise in Node.js, Express,
+              microservices, and automation tooling, I deliver reliable
+              systems that empower teams and keep applications running
+              smoothly at scale.
             </p>
 
             {/* Skills grid */}

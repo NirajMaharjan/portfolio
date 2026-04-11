@@ -88,17 +88,27 @@ const HeroSection = () => {
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-light leading-relaxed"
           style={{ opacity: 0 }}
         >
-          A passionate web developer crafting immersive, modern digital
-          experiences with cutting-edge technologies.
+          A backend developer building scalable APIs, cloud-native services,
+          and production-ready systems with modern server-side tools.
         </p>
-        <button
-          ref={ctaRef}
-          onClick={handleHireMe}
-          className="btn-glow px-10 py-4 rounded-full bg-primary/15 border border-primary/40 text-primary text-lg font-medium tracking-wide"
-          style={{ opacity: 0 }}
-        >
-          Hire Me
-        </button>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button
+            ref={ctaRef}
+            onClick={handleHireMe}
+            className="btn-glow px-10 py-4 rounded-full bg-primary/15 border border-primary/40 text-primary text-lg font-medium tracking-wide"
+            style={{ opacity: 0 }}
+          >
+            Hire Me
+          </button>
+          <a
+            href="/cv.pdf"
+            download
+            className="btn-glow inline-flex items-center justify-center px-10 py-4 rounded-full bg-accent/15 border border-accent/40 text-accent text-lg font-medium tracking-wide"
+            style={{ opacity: 0 }}
+          >
+            Download CV
+          </a>
+        </div>
       </div>
 
       {/* Bottom gradient fade */}
